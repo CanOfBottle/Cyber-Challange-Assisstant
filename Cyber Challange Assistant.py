@@ -37,6 +37,11 @@ while answer == "y":
                 continue
             else:
                 exit()
+        case "3":
+            asciiCodes = input ("What ASCII codes need to be converted? ")#use commas to seperate the codes
+            asciiList = asciiCodes.split (",")
+            asciiListInt = [int (x) for x in asciiList]
+            print(''.join(chr(number) for number in asciiListInt))
         case _:
             print("Sorry, I only have the two options at this time.")
             quit()
