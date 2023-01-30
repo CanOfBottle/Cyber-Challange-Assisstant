@@ -37,7 +37,7 @@ while answer == "y":
             continue
         else:
             exit()
-    elif decoder == "3": #Use commas to seperate the codes
+    elif decoder == "3": #use commas to seperate the codes
         asciiCodes = input ("What ASCII codes need to be converted? ")
         asciiList = asciiCodes.split (",")
         asciiListInt = [int (x) for x in asciiList]
