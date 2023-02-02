@@ -5,7 +5,7 @@ answer = "y" #starts with answer already set to y in order to start the loop
 
 while answer == "y":
 
-    print("Welcome to the Cyber Challange Assistant! Please select which option you would like! \n \n 1 - Base64 Decode \n \n 2 - ROT13 Decryptor \n ")
+    print("Welcome to the Cyber Challange Assistant! Please select which option you would like! \n \n 1 - Base64 Decode \n \n 2 - ROT13 Decryptor \n \n 3 - ASCII Code Converter \n ")
 
 
     decoder = input("Which option would you like? ") #must type choice exactly as it is printed
@@ -37,11 +37,11 @@ while answer == "y":
             continue
         else:
             exit()
-    elif decoder == "3": #use commas to seperate the codes
+    elif decoder == "3": #use commas to seperate the codes. No spaces. 
         asciiCodes = input ("What ASCII codes need to be converted? ")
         asciiList = asciiCodes.split (",")
         asciiListInt = [int (x) for x in asciiList]
         print(''.join(chr(number) for number in asciiListInt))
     else:
-        print("Sorry, I only have the two options at this time.")
+        print("Sorry, I only have the three options at this time.")
         quit()
